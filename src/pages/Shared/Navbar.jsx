@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
+import logoText from "../../assets/logo_text.png";
 import Container from "./Container";
 const Navbar = () => {
   const menuItem = (
@@ -8,7 +9,7 @@ const Navbar = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "text-primary font-semibold"
+              ? "text-primary font-semibold hover:bg-transparent hover:text-white"
               : "text-white hover:bg-transparent hover:text-primary font-semibold"
           }
           to={"/"}
@@ -55,12 +56,17 @@ const Navbar = () => {
     </>
   );
   return (
-    <header className="bg-ghost py-2">
+    <header className="bg-black/50 py-2">
       <Container>
         <div className="navbar">
           <div className="navbar-start">
-            <NavLink to={"/"}>
-              <img className="max-w-[180px]" src={logo} alt="logo" />
+            <NavLink to={"/"} className="flex items-end gap-2">
+              <img className="max-w-[60px]" src={logo} alt="logo" />
+              <img
+                src={logoText}
+                className="max-w-[160px] mb-[-3px]"
+                alt="logo text"
+              />
             </NavLink>
           </div>
           <div className="navbar-end">
