@@ -9,7 +9,7 @@ const Navbar = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "text-primary font-semibold hover:bg-transparent hover:text-white"
+              ? "text-primary font-semibold"
               : "text-white hover:bg-transparent hover:text-primary font-semibold"
           }
           to={"/"}
@@ -56,7 +56,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <header className="bg-black/50 py-2">
+    <header className="bg-black/50 py-2 relative z-50">
       <Container>
         <div className="navbar">
           <div className="navbar-start">
@@ -70,7 +70,7 @@ const Navbar = () => {
             </NavLink>
           </div>
           <div className="navbar-end">
-            <ul className="menu px-1 hidden lg:menu-horizontal">{menuItem}</ul>
+            <ul className="flex gap-8">{menuItem}</ul>
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
                 <svg
