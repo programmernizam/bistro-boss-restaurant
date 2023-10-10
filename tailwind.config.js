@@ -9,10 +9,10 @@ export default {
     themes: [
       {
         light: {
-          "primary": "#edc78e",
+          "primary": "#EEFF25",
           "secondary": "#46c641",
           "accent": "#b2ffbd",
-          "neutral": "#231b28",
+          "neutral": "#1F2937",
           "base-100": "#ffffff",
           "info": "#7ca0de",
           "success": "#0d5929",
