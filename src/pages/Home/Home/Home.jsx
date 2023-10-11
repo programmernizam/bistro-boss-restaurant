@@ -4,7 +4,8 @@ import FeaturedBanner from "../FeaturedBanner/FeaturedBanner";
 import FeaturedProduct from "../FeaturedProduct/FeaturedProduct";
 import Banner from "../Hero/Banner";
 import PopularItem from "../PopularMenuItem/PopularItem";
-import HighlightProduct from "../ProductHighlihtBanner/HighlightProduct";
+import HighlightProduct from "../ProductHighlightBanner/HighlightProduct";
+import Testimonial from "../Testimonial/Testimonial";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <CallUs />
       <FeaturedProduct />
       <HighlightProduct />
+      <Testimonial />
     </div>
   );
 };

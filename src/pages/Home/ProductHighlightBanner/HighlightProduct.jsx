@@ -4,7 +4,7 @@ import Container from "../../Shared/Container";
 import "./ProductHighlight.css";
 const HighlightProduct = () => {
   return (
-    <section className="text-center py-20 bg_overlay z-0">
+    <section className="text-center py-20 bg_overlay z-0 bg-fixed">
       <div className="relative z-10">
         <p className="text-secondary font-bold italic text-xl">
           ---Check it out---
