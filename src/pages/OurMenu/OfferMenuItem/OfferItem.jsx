@@ -3,6 +3,7 @@ import MenuItemCard from "../../../components/MenuItemCardList";
 import SharedButton from "../../../components/SharedButton";
 import SharedTitle from "../../../components/SharedTitle";
 import Container from "../../Shared/Container";
+import DessertBanner from "../DessertFeatured/DessertBanner";
 
 const OfferItem = () => {
   const [menu, setMenu] = useState([]);
@@ -15,20 +16,24 @@ const OfferItem = () => {
       });
   }, []);
   return (
-    <Container>
-      <section className="text-center py-20">
-        <SharedTitle
-          subheading={"---Don't miss---"}
-          heading={"TODAY'S OFFER"}
-        />
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-10">
-          {menu.map((item) => (
-            <MenuItemCard key={item._id} item={item} />
-          ))}
+    <div>
+      <Container>
+        <div className="text-center py-20">
+          <SharedTitle
+            subheading={"---Don't miss---"}
+            heading={"TODAY'S OFFER"}
+          />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-10">
+            {menu.map((item) => (
+              <MenuItemCard key={item._id} item={item} />
+            ))}
+          </div>
+          <SharedButton title={"ORDER YOUR FAVORITE FOOD"} />
         </div>
-        <SharedButton title={"ORDER YOUR FAVORITE FOOD"} />
-      </section>
-    </Container>
+      </Container>
+      <DessertBanner />
+      
+    </div>
   );
 };
 
