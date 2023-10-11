@@ -1,4 +1,5 @@
 import Category from "../Category/Category";
+import FeaturedBanner from "../FeaturedBanner/FeaturedBanner";
 import Banner from "../Hero/Banner";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <div>
       <Banner />
       <Category />
+      <FeaturedBanner />
     </div>
   );
 };
