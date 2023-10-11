@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import MenuItemCard from "../../../components/MenuItemCard";
 import SharedTitle from "../../../components/SharedTitle";
 import Container from "../../Shared/Container";
 
@@ -19,8 +20,10 @@ const PopularItem = () => {
           heading={"From Our Menu"}
           subheading={"---Check it out---"}
         />
-        <div>
-            
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
+          {menu.map((item) => (
+            <MenuItemCard key={item._id} item={item} />
+          ))}
         </div>
       </div>
     </Container>
