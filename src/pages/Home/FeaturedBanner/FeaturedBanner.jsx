@@ -8,7 +8,7 @@ const FeaturedBanner = () => {
         style={{ backgroundImage: `url(${banner})` }}
       >
         <div className="bg-white p-20">
-          <h2>Bistro Boss</h2>
+          <h2 className="text-5xl mb-5">Bistro Boss</h2>
           <p>
             Bistro Boss is a culinary haven where sophistication meets
             indulgence. A cozy ambiance beckons diners into a world of exquisite
