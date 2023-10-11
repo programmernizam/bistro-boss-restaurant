@@ -3,7 +3,10 @@ import MenuItemCard from "../../../components/MenuItemCardList";
 import SharedButton from "../../../components/SharedButton";
 import SharedTitle from "../../../components/SharedTitle";
 import Container from "../../Shared/Container";
-import DessertBanner from "../DessertFeatured/DessertBanner";
+import DessertBanner from "../Dessert/DessertBanner";
+import PizzaBanner from "../Pizza/PizzaBanner";
+import SaladBanner from "../Salad/SaladBanner";
+import SoupBanner from "../Soup/SoupBanner";
 
 const OfferItem = () => {
   const [menu, setMenu] = useState([]);
@@ -32,7 +35,9 @@ const OfferItem = () => {
         </div>
       </Container>
       <DessertBanner />
-      
+      <PizzaBanner />
+      <SaladBanner />
+      <SoupBanner />
     </div>
   );
 };
