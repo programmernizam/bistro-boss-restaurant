@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import MenuItemCard from "../../../components/MenuItemCard";
+import SharedButton from "../../../components/SharedButton";
 import SharedTitle from "../../../components/SharedTitle";
 import Container from "../../Shared/Container";
 
@@ -20,11 +21,12 @@ const PopularItem = () => {
           heading={"From Our Menu"}
           subheading={"---Check it out---"}
         />
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6  my-10">
           {menu.map((item) => (
             <MenuItemCard key={item._id} item={item} />
           ))}
         </div>
+        <SharedButton title={"View Full  Menu"} />
       </div>
     </Container>
   );

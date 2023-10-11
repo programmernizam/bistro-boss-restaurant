@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 const MenuItemCard = ({ item }) => {
-  const { name, recipe, image, price, category } = item;
+  const { name, recipe, image, price } = item;
   return (
     <div className="flex gap-8">
       <img
