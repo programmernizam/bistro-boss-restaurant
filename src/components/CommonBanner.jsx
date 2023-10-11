@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const CommonBanner = ({ bannerBg, heading, subheading }) => {
   return (
     <section

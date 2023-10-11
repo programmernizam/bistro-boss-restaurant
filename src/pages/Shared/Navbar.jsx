@@ -70,9 +70,9 @@ const Navbar = () => {
             </NavLink>
           </div>
           <div className="navbar-end">
-            <ul className="flex gap-8">{menuItem}</ul>
+            <ul className="lg:flex gap-8 hidden">{menuItem}</ul>
             <div className="dropdown dropdown-end">
-              <label tabIndex={0} className="btn btn-ghost lg:hidden">
+              <label tabIndex={0} className="btn btn-ghost text-white lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
