@@ -1,3 +1,4 @@
+import CallUs from "../CallUs/CallUs";
 import Category from "../Category/Category";
 import FeaturedBanner from "../FeaturedBanner/FeaturedBanner";
 import Banner from "../Hero/Banner";
@@ -10,6 +11,7 @@ const Home = () => {
       <Category />
       <FeaturedBanner />
       <PopularItem />
+      <CallUs />
     </div>
   );
 };
