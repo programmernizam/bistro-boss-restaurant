@@ -24,9 +24,9 @@ const Navbar = () => {
               ? "text-primary font-semibold"
               : "text-white hover:bg-transparent hover:text-primary font-semibold"
           }
-          to={"/about"}
+          to={"/our-menu"}
         >
-          About
+          Our Menu
         </NavLink>
       </li>
       <li>
@@ -72,7 +72,10 @@ const Navbar = () => {
           <div className="navbar-end">
             <ul className="lg:flex gap-8 hidden">{menuItem}</ul>
             <div className="dropdown dropdown-end">
-              <label tabIndex={0} className="btn btn-ghost text-white lg:hidden">
+              <label
+                tabIndex={0}
+                className="btn btn-ghost text-white lg:hidden"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
