@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import MenuItemCard from "../../../components/MenuItemCard";
+import MenuItemCard from "../../../components/MenuItemCardList";
 import SharedButton from "../../../components/SharedButton";
 import SharedTitle from "../../../components/SharedTitle";
 import Container from "../../Shared/Container";
