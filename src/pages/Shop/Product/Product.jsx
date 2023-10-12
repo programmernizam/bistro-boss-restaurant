@@ -23,13 +23,49 @@ const Product = () => {
     <Container>
       <div className="py-20">
         <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-          <TabList className={"tabs"}>
-            <Tab className={"tab tab-bordered"}>All</Tab>
-            <Tab className={"tab tab-bordered"}>Dessert</Tab>
-            <Tab className={"tab tab-bordered"}>Pizza</Tab>
-            <Tab className={"tab tab-bordered"}>Salad</Tab>
-            <Tab className={"tab tab-bordered"}>Soup</Tab>
-            <Tab className={"tab tab-bordered"}>Drinks</Tab>
+          <TabList className={"tabs justify-center gap-3"}>
+            <Tab
+              className={
+                "tab border-b-2 border-transparent font-medium text-neutral uppercase hover:border-secondary "
+              }
+            >
+              All
+            </Tab>
+            <Tab
+              className={
+                "tab border-b-2 border-transparent font-medium text-neutral uppercase hover:border-secondary "
+              }
+            >
+              Dessert
+            </Tab>
+            <Tab
+              className={
+                "tab border-b-2 border-transparent font-medium text-neutral uppercase hover:border-secondary "
+              }
+            >
+              Pizza
+            </Tab>
+            <Tab
+              className={
+                "tab border-b-2 border-transparent font-medium text-neutral uppercase hover:border-secondary "
+              }
+            >
+              Salad
+            </Tab>
+            <Tab
+              className={
+                "tab border-b-2 border-transparent font-medium text-neutral uppercase hover:border-secondary "
+              }
+            >
+              Soup
+            </Tab>
+            <Tab
+              className={
+                "tab border-b-2 border-transparent font-medium text-neutral uppercase hover:border-secondary "
+              }
+            >
+              Drinks
+            </Tab>
           </TabList>
           <TabPanel>
             <OrderTab items={products} />
