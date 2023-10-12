@@ -1,6 +1,6 @@
 import Container from "../pages/Shared/Container";
 
-/* eslint-disable react/prop-types */
+
 const CommonBanner = ({ bannerBg, heading, subheading, containerBg }) => {
   return (
     <section

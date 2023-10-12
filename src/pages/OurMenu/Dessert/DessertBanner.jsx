@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+
 import banner from "../../../assets/home/chef-service.jpg";
 import CommonBanner from "../../../components/CommonBanner";
 import DessertItem from "./DessertItem";

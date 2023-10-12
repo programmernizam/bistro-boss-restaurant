@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+
 import MenuItemCard from "../../../components/MenuItemCardList";
 import SharedButton from "../../../components/SharedButton";
 import Container from "../../Shared/Container";

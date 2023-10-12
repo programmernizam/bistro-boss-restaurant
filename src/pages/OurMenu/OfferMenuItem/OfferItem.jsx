@@ -12,6 +12,9 @@ const OfferItem = () => {
   const [menu] = useMenu();
   const offer = menu.filter((item) => item.category === "offered");
   const dessert = menu.filter((item) => item.category === "dessert");
+  const pizza = menu.filter((item) => item.category === "pizza");
+  const salad = menu.filter((item) => item.category === "salads");
+  const soup = menu.filter((item) => item.category === "soups");
   return (
     <div>
       <Container>
@@ -29,9 +32,9 @@ const OfferItem = () => {
         </div>
       </Container>
       <DessertBanner dessert={dessert} />
-      <PizzaBanner />
-      <SaladBanner />
-      <SoupBanner />
+      <PizzaBanner pizza={pizza} />
+      <SaladBanner salad={salad} />
+      <SoupBanner soup={soup} />
     </div>
   );
 };

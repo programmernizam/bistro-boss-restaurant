@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-/* eslint-disable react/prop-types */
+
 const SharedButton = ({ title, containerStyles, link }) => {
   return (
     <Link to={link}>

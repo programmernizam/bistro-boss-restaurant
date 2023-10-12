@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+
 const MenuItemCard = ({ item }) => {
   const { name, recipe, image, price } = item;
   return (

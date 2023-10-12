@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+
 const ProductCard = ({ product }) => {
   const { name, recipe, image } = product;
   return (
