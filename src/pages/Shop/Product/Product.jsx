@@ -14,25 +14,16 @@ const Product = () => {
   const salad = menu.filter((item) => item.category === "salad");
   const drinks = menu.filter((item) => item.category === "drinks");
 
+  const tabStyle =
+    "tab border-b-2 border-transparent font-medium text-neutral uppercase hover:border-secondary";
+
   return (
     <Container>
       <div className="py-20">
         <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
           <TabList className={"tabs justify-center gap-3"}>
-            <Tab
-              className={
-                "tab border-b-2 border-transparent font-medium text-neutral uppercase hover:border-secondary "
-              }
-            >
-              All
-            </Tab>
-            <Tab
-              className={
-                "tab border-b-2 border-transparent font-medium text-neutral uppercase hover:border-secondary "
-              }
-            >
-              Dessert
-            </Tab>
+            <Tab className={tabStyle}>All</Tab>
+            <Tab className={tabStyle}>Dessert</Tab>
             <Tab
               className={
                 "tab border-b-2 border-transparent font-medium text-neutral uppercase hover:border-secondary "
