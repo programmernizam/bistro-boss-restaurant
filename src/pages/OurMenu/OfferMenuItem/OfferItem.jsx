@@ -10,7 +10,8 @@ import SoupBanner from "../Soup/SoupBanner";
 
 const OfferItem = () => {
   const [menu] = useMenu();
-  // const offer
+  const offer = menu.filter((item) => item.category === "offered");
+  const dessert = menu.filter((item) => item.category === "dessert");
   return (
     <div>
       <Container>
@@ -20,14 +21,14 @@ const OfferItem = () => {
             heading={"TODAY'S OFFER"}
           />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-10">
-            {menu.map((item) => (
+            {offer.map((item) => (
               <MenuItemCard key={item._id} item={item} />
             ))}
           </div>
           <SharedButton title={"ORDER YOUR FAVORITE FOOD"} />
         </div>
       </Container>
-      <DessertBanner />
+      <DessertBanner dessert={dessert} />
       <PizzaBanner />
       <SaladBanner />
       <SoupBanner />
