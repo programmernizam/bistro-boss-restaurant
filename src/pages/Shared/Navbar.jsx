@@ -36,9 +36,9 @@ const Navbar = () => {
               ? "text-primary font-semibold"
               : "text-white hover:bg-transparent hover:text-primary font-semibold"
           }
-          to={"/service"}
+          to={"/shop"}
         >
-          Services
+          Our Shop
         </NavLink>
       </li>
       <li>
