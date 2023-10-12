@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import Banner from "../Hero/Banner";
 
 const Contact = () => {
   return (
@@ -6,7 +7,7 @@ const Contact = () => {
       <Helmet>
         <title>Contact Us - Bistro Boss</title>
       </Helmet>
-      <h2>This is contact page</h2>
+      <Banner />
     </section>
   );
 };
