@@ -9,8 +9,8 @@ const Navbar = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "text-primary font-semibold"
-              : "text-white hover:bg-transparent hover:text-primary font-semibold"
+              ? "text-primary font-medium"
+              : "text-white hover:bg-transparent font-medium hover:text-primary"
           }
           to={"/"}
         >
@@ -21,8 +21,20 @@ const Navbar = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "text-primary font-semibold"
-              : "text-white hover:bg-transparent hover:text-primary font-semibold"
+              ? "text-primary font-medium"
+              : "text-white hover:bg-transparent font-medium hover:text-primary"
+          }
+          to={"/contact"}
+        >
+          Contact Us
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "text-primary font-medium"
+              : "text-white hover:bg-transparent font-medium hover:text-primary"
           }
           to={"/our-menu"}
         >
@@ -33,24 +45,12 @@ const Navbar = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "text-primary font-semibold"
-              : "text-white hover:bg-transparent hover:text-primary font-semibold"
+              ? "text-primary font-medium"
+              : "text-white hover:bg-transparent font-medium hover:text-primary"
           }
           to={"/shop"}
         >
           Our Shop
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          className={({ isActive }) =>
-            isActive
-              ? "text-primary font-semibold"
-              : "text-white hover:bg-transparent hover:text-primary font-semibold"
-          }
-          to={"/contact"}
-        >
-          Contact
         </NavLink>
       </li>
     </>
@@ -70,7 +70,7 @@ const Navbar = () => {
             </NavLink>
           </div>
           <div className="navbar-end">
-            <ul className="lg:flex gap-8 hidden">{menuItem}</ul>
+            <ul className="lg:flex gap-8 hidden uppercase">{menuItem}</ul>
             <div className="dropdown dropdown-end">
               <label
                 tabIndex={0}
