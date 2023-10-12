@@ -24,34 +24,10 @@ const Product = () => {
           <TabList className={"tabs justify-center gap-3"}>
             <Tab className={tabStyle}>All</Tab>
             <Tab className={tabStyle}>Dessert</Tab>
-            <Tab
-              className={
-                "tab border-b-2 border-transparent font-medium text-neutral uppercase hover:border-secondary "
-              }
-            >
-              Pizza
-            </Tab>
-            <Tab
-              className={
-                "tab border-b-2 border-transparent font-medium text-neutral uppercase hover:border-secondary "
-              }
-            >
-              Salad
-            </Tab>
-            <Tab
-              className={
-                "tab border-b-2 border-transparent font-medium text-neutral uppercase hover:border-secondary "
-              }
-            >
-              Soup
-            </Tab>
-            <Tab
-              className={
-                "tab border-b-2 border-transparent font-medium text-neutral uppercase hover:border-secondary "
-              }
-            >
-              Drinks
-            </Tab>
+            <Tab className={tabStyle}>Pizza</Tab>
+            <Tab className={tabStyle}>Salad</Tab>
+            <Tab className={tabStyle}>Soup</Tab>
+            <Tab className={tabStyle}>Drinks</Tab>
           </TabList>
           <TabPanel>
             <OrderTab items={menu} />
