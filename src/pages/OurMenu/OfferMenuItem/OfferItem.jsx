@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
 import MenuItemCard from "../../../components/MenuItemCardList";
 import SharedButton from "../../../components/SharedButton";
 import SharedTitle from "../../../components/SharedTitle";
+import useMenu from "../../../hooks/useMenu";
 import Container from "../../Shared/Container";
 import DessertBanner from "../Dessert/DessertBanner";
 import PizzaBanner from "../Pizza/PizzaBanner";
@@ -9,15 +9,8 @@ import SaladBanner from "../Salad/SaladBanner";
 import SoupBanner from "../Soup/SoupBanner";
 
 const OfferItem = () => {
-  const [menu, setMenu] = useState([]);
-  useEffect(() => {
-    fetch("menu.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const offerItem = data.filter((item) => item.category === "offered");
-        setMenu(offerItem);
-      });
-  }, []);
+  const [menu] = useMenu();
+  // const offer
   return (
     <div>
       <Container>

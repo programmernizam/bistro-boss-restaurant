@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/logo.png";
 import logoText from "../../assets/logo_text.png";
 import Container from "./Container";
 const Navbar = () => {
@@ -60,13 +59,8 @@ const Navbar = () => {
       <Container>
         <div className="navbar">
           <div className="navbar-start">
-            <NavLink to={"/"} className="flex items-end gap-2">
-              <img className="max-w-[60px]" src={logo} alt="logo" />
-              <img
-                src={logoText}
-                className="max-w-[160px] mb-[-3px]"
-                alt="logo text"
-              />
+            <NavLink to={"/"}>
+              <img src={logoText} className="max-w-[160px]" alt="logo text" />
             </NavLink>
           </div>
           <div className="navbar-end">
