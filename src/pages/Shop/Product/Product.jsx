@@ -1,23 +1,18 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import useMenu from "../../../hooks/useMenu";
 import Container from "../../Shared/Container";
 import OrderTab from "./OrderTab";
 
 const Product = () => {
-  const [products, setProducts] = useState([]);
+  const [menu] = useMenu();
   const [tabIndex, setTabIndex] = useState(0);
 
-  useEffect(() => {
-    fetch("menu.json")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
-  }, []);
-
-  const dessert = products.filter((item) => item.category === "dessert");
-  const pizza = products.filter((item) => item.category === "pizza");
-  const soup = products.filter((item) => item.category === "soup");
-  const salad = products.filter((item) => item.category === "salad");
-  const drinks = products.filter((item) => item.category === "drinks");
+  const dessert = menu.filter((item) => item.category === "dessert");
+  const pizza = menu.filter((item) => item.category === "pizza");
+  const soup = menu.filter((item) => item.category === "soup");
+  const salad = menu.filter((item) => item.category === "salad");
+  const drinks = menu.filter((item) => item.category === "drinks");
 
   return (
     <Container>
@@ -68,7 +63,7 @@ const Product = () => {
             </Tab>
           </TabList>
           <TabPanel>
-            <OrderTab items={products} />
+            <OrderTab items={menu} />
           </TabPanel>
           <TabPanel>
             <OrderTab items={dessert} />
