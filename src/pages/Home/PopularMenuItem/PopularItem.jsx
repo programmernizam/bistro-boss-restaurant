@@ -26,7 +26,7 @@ const PopularItem = () => {
             <MenuItemCard key={item._id} item={item} />
           ))}
         </div>
-        <SharedButton title={"View Full  Menu"} />
+        <SharedButton title={"View Full  Menu"} link={"/our-menu"} />
       </div>
     </Container>
   );
