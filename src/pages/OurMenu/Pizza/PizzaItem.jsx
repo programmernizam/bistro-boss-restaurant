@@ -11,7 +11,7 @@ const PizzaItem = ({ pizza }) => {
             <MenuItemCard key={item._id} item={item} />
           ))}
         </div>
-        <SharedButton title={"ORDER YOUR FAVORITE FOOD"} />
+        <SharedButton title={"ORDER YOUR FAVORITE PIZZA"} />
       </div>
     </Container>
   );

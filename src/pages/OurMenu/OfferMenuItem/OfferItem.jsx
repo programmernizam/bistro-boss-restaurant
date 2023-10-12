@@ -13,8 +13,8 @@ const OfferItem = () => {
   const offer = menu.filter((item) => item.category === "offered");
   const dessert = menu.filter((item) => item.category === "dessert");
   const pizza = menu.filter((item) => item.category === "pizza");
-  const salad = menu.filter((item) => item.category === "salads");
-  const soup = menu.filter((item) => item.category === "soups");
+  const salad = menu.filter((item) => item.category === "salad");
+  const soup = menu.filter((item) => item.category === "soup");
   return (
     <div>
       <Container>

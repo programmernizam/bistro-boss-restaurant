@@ -1,4 +1,3 @@
-
 import MenuItemCard from "../../../components/MenuItemCardList";
 import SharedButton from "../../../components/SharedButton";
 import Container from "../../Shared/Container";
@@ -12,7 +11,7 @@ const DessertItem = ({ dessert }) => {
             <MenuItemCard key={item._id} item={item} />
           ))}
         </div>
-        <SharedButton title={"ORDER YOUR FAVORITE FOOD"} />
+        <SharedButton title={"ORDER YOUR FAVORITE DESSERTS"} />
       </div>
     </Container>
   );
