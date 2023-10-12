@@ -1,8 +1,10 @@
+import Banner from "../Hero/Banner";
+
 const Shop = () => {
   return (
-    <div>
-      <h1>This is shop page</h1>
-    </div>
+    <section>
+      <Banner />
+    </section>
   );
 };
 
