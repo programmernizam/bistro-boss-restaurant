@@ -1,7 +1,8 @@
-const ContactInfoCard = ({ icon }) => {
+const ContactInfoCard = ({ icon, title }) => {
   return (
     <div>
-      <div>{icon}</div>
+      <span>{icon}</span>
+      <h3>{title}</h3>
     </div>
   );
 };
