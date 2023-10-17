@@ -9,9 +9,9 @@ const ContactInfo = () => {
       <div className="text-center py-20">
         <SharedTitle heading={"OUR LOCATION"} subheading={"---Visit Us---"} />
         <div>
-          <ContactInfoCard icon={FaPhoneVolume} />
-          <ContactInfoCard icon={FaLocationDot} />
-          <ContactInfoCard icon={FaClock} />
+          <ContactInfoCard icon={<FaPhoneVolume />} title={"Email"}/>
+          <ContactInfoCard icon={<FaLocationDot />} title={"Email"}/>
+          <ContactInfoCard icon={<FaClock />} title={"Email"}/>
         </div>
       </div>
     </Container>
