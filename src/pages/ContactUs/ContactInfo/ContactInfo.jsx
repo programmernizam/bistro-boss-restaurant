@@ -8,19 +8,19 @@ const ContactInfo = () => {
     <Container>
       <div className="text-center py-20">
         <SharedTitle heading={"OUR LOCATION"} subheading={"---Visit Us---"} />
-        <div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           <ContactInfoCard
-            icon={<FaPhoneVolume />}
+            icon={<FaPhoneVolume className="text-2xl text-white" />}
             title={"Phone"}
             description={"+880 1234567890"}
           />
           <ContactInfoCard
-            icon={<FaLocationDot />}
+            icon={<FaLocationDot className="text-2xl text-white" />}
             title={"Address"}
             description={"123 ABS Street, Uni 21, Bangladesh"}
           />
           <ContactInfoCard
-            icon={<FaClock />}
+            icon={<FaClock className="text-2xl text-white" />}
             title={"Working Hours"}
             description={"Sun-Fri: 08:00 - 22:00"}
           />
