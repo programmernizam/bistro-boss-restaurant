@@ -4,8 +4,11 @@ import Container from "../../Shared/Container";
 const ContactForm = () => {
   return (
     <Container>
-      <div>
-        <SharedTitle heading={""} subheading={""} />
+      <div className="text-center">
+        <SharedTitle
+          heading={"CONTACT FORM"}
+          subheading={"---Send Us a Message---"}
+        />
       </div>
     </Container>
   );

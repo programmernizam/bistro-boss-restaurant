@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import ContactForm from "../ContactForm/ContactForm";
 import ContactInfo from "../ContactInfo/ContactInfo";
 import Banner from "../Hero/Banner";
 
@@ -10,6 +11,7 @@ const Contact = () => {
       </Helmet>
       <Banner />
       <ContactInfo />
+      <ContactForm />
     </section>
   );
 };
