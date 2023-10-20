@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { BiLogoTelegram } from "react-icons/bi";
 import SharedTitle from "../../../components/SharedTitle";
 import Container from "../../Shared/Container";
 
@@ -17,6 +18,7 @@ const ContactForm = () => {
         />
       </div>
       <form
+        className="bg-gray-200 p-20 mt-5 mb-20"
         onSubmit={handleSubmit}
         // action="https://formspree.io/f/mjvzgjnk"
         // method="POST"
@@ -25,50 +27,49 @@ const ContactForm = () => {
         <div className="grid grid-cols-2 gap-5">
           <div className="form-control">
             <label className="label">
-              <span className="label-text font-semibold">First Name</span>
+              <span className="label-text font-semibold">Name*</span>
             </label>
             <input
-              className="input input-bordered"
-              {...register("firstName", { required: true })}
+              className="input rounded"
+              {...register("name", { required: true })}
             />
             <p className="text-error">
-              {errors.firstName?.type === "required" &&
-                "First Name is required"}
+              {errors.name?.type === "required" && "Name is required"}
             </p>
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text font-semibold">Last Name</span>
+              <span className="label-text font-semibold">Email*</span>
             </label>
             <input
-              className="input input-bordered"
-              {...register("lastName", { required: true })}
+              className="input rounded"
+              {...register("email", { required: true })}
             />
             <p className="text-error">
-              {errors.lastName?.type === "required" && "Last Name is required"}
+              {errors.email?.type === "required" && "Email is required"}
             </p>
           </div>
         </div>
-        {/* Email Filed */}
-        <div className="form-control">
+        {/* Phone Filed */}
+        <div className="form-control my-5">
           <label className="label">
-            <span className="label-text font-semibold">Email</span>
+            <span className="label-text font-semibold">Phone*</span>
           </label>
           <input
-            className="input input-bordered"
-            {...register("email", { required: true })}
+            className="input rounded"
+            {...register("phone", { required: true })}
           />
           <p className="text-error">
-            {errors.email?.type === "required" && "Email is required"}
+            {errors.phone?.type === "required" && "Phone number is required"}
           </p>
         </div>
         {/* Message Filed*/}
         <div className="form-control">
           <label className="label">
-            <span className="label-text font-bold">Message</span>
+            <span className="label-text font-bold">Message*</span>
           </label>
           <textarea
-            className="input input-bordered h-28"
+            className="input rounded h-[300px]"
             {...register("message", { required: true })}
           ></textarea>
           <p className="text-error">
@@ -76,12 +77,13 @@ const ContactForm = () => {
           </p>
         </div>
         {/* Login Button */}
-        <div className=" mt-6">
+        <div className="text-center mt-6">
           <button
             type="submit"
             className="btn btn-secondary px-10 rounded-none text-white"
           >
             Send Message
+            <BiLogoTelegram />
           </button>
         </div>
       </form>
