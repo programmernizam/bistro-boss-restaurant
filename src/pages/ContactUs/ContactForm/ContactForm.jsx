@@ -80,7 +80,7 @@ const ContactForm = () => {
         <div className="text-center mt-6">
           <button
             type="submit"
-            className="btn btn-secondary px-10 rounded-none text-white"
+            className="btn btn-secondary px-10 rounded text-white"
           >
             Send Message
             <BiLogoTelegram />
