@@ -30,6 +30,7 @@ const Testimonial = () => {
             slidesPerView={1}
             pagination={true}
             navigation={true}
+            loop={true}
             modules={[Pagination]}
             className="mySwiper"
           >
@@ -44,7 +45,9 @@ const Testimonial = () => {
                   />
                   <BiSolidQuoteLeft className="text-8xl mx-auto" />
                   <p>{review.details}</p>
-                  <h4 className="text-xl font-semibold text-secondary">{review.name}</h4>
+                  <h4 className="text-xl font-semibold text-secondary">
+                    {review.name}
+                  </h4>
                 </div>
               </SwiperSlide>
             ))}
