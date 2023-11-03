@@ -55,7 +55,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <header className="bg-black/50 py-2 relative z-50">
+    <header className="bg-black/50 py-2 sticky top-0 z-50">
       <Container>
         <div className="navbar">
           <div className="navbar-start">
