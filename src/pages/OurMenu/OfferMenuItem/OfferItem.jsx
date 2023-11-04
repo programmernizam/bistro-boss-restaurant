@@ -1,4 +1,5 @@
-import bannerBg from "../../../assets/menu/dessert-bg.jpeg";
+import dessertBg from "../../../assets/menu/dessert-bg.jpeg";
+import pizzaBg from "../../../assets/menu/pizza-bg.jpg";
 import SharedTitle from "../../../components/SharedTitle";
 import useMenu from "../../../hooks/useMenu";
 import Container from "../../Shared/Container";
@@ -28,7 +29,16 @@ const OfferItem = () => {
             subHeading={
               "Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             }
-            bannerBg={bannerBg}
+            bannerBg={dessertBg}
+          />
+          {/* pizza */}
+          <MenuCategory
+            item={pizza}
+            heading={"Pizza"}
+            subHeading={
+              "Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            }
+            bannerBg={pizzaBg}
           />
         </div>
       </Container>
