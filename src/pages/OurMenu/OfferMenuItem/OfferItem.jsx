@@ -1,6 +1,7 @@
 import dessertBg from "../../../assets/menu/dessert-bg.jpeg";
 import pizzaBg from "../../../assets/menu/pizza-bg.jpg";
 import saladBg from "../../../assets/menu/salad-bg.jpg";
+import soupBg from "../../../assets/menu/soup-bg.jpg";
 import SharedTitle from "../../../components/SharedTitle";
 import useMenu from "../../../hooks/useMenu";
 import Container from "../../Shared/Container";
@@ -49,6 +50,15 @@ const OfferItem = () => {
               "Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             }
             bannerBg={saladBg}
+          />
+          {/* soup */}
+          <MenuCategory
+            item={soup}
+            heading={"Soup"}
+            subHeading={
+              "Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            }
+            bannerBg={soupBg}
           />
         </div>
       </Container>
