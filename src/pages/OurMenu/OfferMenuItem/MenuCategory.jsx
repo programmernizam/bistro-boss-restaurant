@@ -7,12 +7,14 @@ const MenuCategory = ({ item, heading, bannerBg, subHeading }) => {
   return (
     <div>
       {heading && (
-        <CommonBanner
-          heading={heading}
-          subheading={subHeading}
-          bannerBg={bannerBg}
-          containerBg={"bg-black/60 text-white"}
-        />
+        <div className="mt-10">
+          <CommonBanner
+            heading={heading}
+            subheading={subHeading}
+            bannerBg={bannerBg}
+            containerBg={"bg-black/60 text-white"}
+          />
+        </div>
       )}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-10">
         {item.map((item) => (
