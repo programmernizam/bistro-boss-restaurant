@@ -23,18 +23,6 @@ const Navbar = () => {
               ? "text-primary font-medium"
               : "text-white hover:bg-transparent font-medium hover:text-primary"
           }
-          to={"/contact"}
-        >
-          Contact Us
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          className={({ isActive }) =>
-            isActive
-              ? "text-primary font-medium"
-              : "text-white hover:bg-transparent font-medium hover:text-primary"
-          }
           to={"/our-menu"}
         >
           Our Menu
@@ -50,6 +38,18 @@ const Navbar = () => {
           to={"/shop"}
         >
           Our Shop
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "text-primary font-medium"
+              : "text-white hover:bg-transparent font-medium hover:text-primary"
+          }
+          to={"/contact"}
+        >
+          Contact Us
         </NavLink>
       </li>
     </>
