@@ -3,7 +3,7 @@ import Container from "../pages/Shared/Container";
 const CommonBanner = ({ bannerBg, heading, subheading, containerBg }) => {
   return (
     <section
-      className="text-center p-8 md:p-32 bg-center bg-cover"
+      className="text-center px-8 py-28 md:p-32 bg-center bg-cover"
       style={{ backgroundImage: `url(${bannerBg})` }}
     >
       <Container>

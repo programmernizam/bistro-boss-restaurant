@@ -8,7 +8,7 @@ const ContactInfo = () => {
     <Container>
       <div className="text-center py-20">
         <SharedTitle heading={"OUR LOCATION"} subheading={"---Visit Us---"} />
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 p-5 lg:0">
           <ContactInfoCard
             icon={<FaPhoneVolume className="text-3xl text-white" />}
             title={"Phone"}

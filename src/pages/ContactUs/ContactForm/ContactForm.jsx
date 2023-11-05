@@ -18,7 +18,7 @@ const ContactForm = () => {
         />
       </div>
       <form
-        className="bg-gray-200 p-20 mt-5 mb-20"
+        className="bg-gray-200 p-10 lg:p-20 mt-5 mb-20"
         onSubmit={handleSubmit}
         // action="https://formspree.io/f/mjvzgjnk"
         // method="POST"
