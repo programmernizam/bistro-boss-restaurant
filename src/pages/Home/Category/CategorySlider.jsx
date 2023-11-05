@@ -22,18 +22,18 @@ export default function CategorySlider() {
         breakpoints={{
           640: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 10,
           },
           768: {
             slidesPerView: 4,
-            spaceBetween: 40,
+            spaceBetween: 20,
           },
           1024: {
             slidesPerView: 4,
-            spaceBetween: 50,
+            spaceBetween: 20,
           },
         }}
-        spaceBetween={24}
+        spaceBetween={15}
         autoplay={true}
         pagination={{
           clickable: true,
@@ -43,25 +43,33 @@ export default function CategorySlider() {
       >
         <SwiperSlide>
           <img src={slide1} alt="slide" className="" />
-          <h3 className="text-4xl text-white -mt-16 uppercase pb-5">Salads</h3>
+          <h3 className="text-xl md:text-3xl lg:text-4xl text-white -mt-10 md:-mt-14 lg:-mt-16 uppercase pb-5">
+            Salads
+          </h3>
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide2} alt="slide" className="" />
-          <h3 className="text-4xl text-white -mt-16 uppercase pb-5">Pizza</h3>
+          <h3 className="text-lg font-semibold md:text-3xl lg:text-4xl text-white -mt-10 md:-mt-14 lg:-mt-16 uppercase pb-5">
+            Pizza
+          </h3>
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide3} alt="slide" className="" />
-          <h3 className="text-4xl text-white -mt-16 uppercase pb-5">Soups</h3>
+          <h3 className="text-lg font-semibold md:text-3xl lg:text-4xl text-white -mt-10 md:-mt-14 lg:-mt-16 uppercase pb-5">
+            Soups
+          </h3>
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide4} alt="slide" className="" />
-          <h3 className="text-4xl text-white -mt-16 uppercase pb-5">
+          <h3 className="text-lg font-semibold md:text-3xl lg:text-4xl text-white -mt-10 md:-mt-14 lg:-mt-16 uppercase pb-5">
             Desserts
           </h3>
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide5} alt="slide" className="" />
-          <h3 className="text-4xl text-white -mt-16 uppercase pb-5">Salads</h3>
+          <h3 className="text-lg font-semibold md:text-3xl lg:text-4xl text-white -mt-10 md:-mt-14 lg:-mt-16 uppercase pb-5">
+            Salads
+          </h3>
         </SwiperSlide>
       </Swiper>
     </>
