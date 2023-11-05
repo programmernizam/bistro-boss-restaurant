@@ -4,12 +4,12 @@ import Container from "../../Shared/Container";
 import "./ProductHighlight.css";
 const HighlightProduct = () => {
   return (
-    <section className="text-center py-20 bg_overlay z-0 bg-fixed">
+    <section className="text-center p-5 lg:p-0 py-20 bg_overlay z-0 bg-fixed">
       <div className="relative z-10">
         <p className="text-secondary font-bold italic text-xl">
           ---Check it out---
         </p>
-        <h3 className="text-[40px] text-white border-y-4 inline-block px-10 mt-5 border-[#E8E8E8]">
+        <h3 className="text-3xl md:text-[40px] text-white border-y-4 inline-block px-10 mt-5 border-[#E8E8E8]">
           FROM OUR MENU
         </h3>
         <Container>
