@@ -1,9 +1,15 @@
-
 const ProductCard = ({ product }) => {
-  const { name, recipe, image } = product;
+  const { name, recipe, image, price } = product;
   return (
-    <div className="bg-gray-200/50">
-      <img src={image} alt="product" className="w-full" />
+    <div className="bg-gray-200/50 mt-5">
+      {price && (
+        <p className="text-right">
+          <span className="bg-black text-white inline px-5 py-2 z-10 relative mr-3">
+            {price}
+          </span>
+        </p>
+      )}
+      <img src={image} alt="product" className="w-full -mt-10 z-0" />
       <div className="card_content p-5">
         <h3 className="text-2xl font-semibold">{name}</h3>
         <p className="my-3">{recipe.slice(0, 70)}...</p>

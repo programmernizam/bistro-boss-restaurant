@@ -22,7 +22,7 @@ const MenuCategory = ({ item, heading, bannerBg, subHeading }) => {
         ))}
       </div>
       <Link
-        to={`/shop/${heading}`}
+        to={`/order`}
         className="font-semibold border-b-4 rounded-xl px-8 py-2 border-gray-300 hover:border-secondary duration-500"
       >
         ORDER YOUR FAVORITE FOOD
