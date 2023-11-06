@@ -19,7 +19,7 @@ const Product = () => {
 
   return (
     <Container>
-      <div className="py-20">
+      <div className="py-20 px-5 lg:px-0">
         <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
           <TabList className={"tabs justify-center gap-3"}>
             <Tab className={tabStyle}>All</Tab>
